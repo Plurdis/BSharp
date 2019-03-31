@@ -33,7 +33,12 @@ namespace BSharp.Components
         {
             AddMethod(new ConstructorBlock(this));
         }
-        
+
+        public ClassBlock(string name) : this()
+        {
+            Name = name;
+        }
+
         public void AddMethod(MethodBlock block) => Add(block);
 
         public void AddField(FieldBlock block) => Add(block);

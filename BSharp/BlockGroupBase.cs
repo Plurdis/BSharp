@@ -11,10 +11,6 @@ namespace BSharp
 
         public virtual IEnumerable<IBlock> Nodes => InternalNodes;
 
-        public IBlock Previous { get; protected set; }
-
-        public IBlock Next { get; protected set; }
-
         public virtual int Count => InternalNodes.Count;
 
         internal List<IBlock> InternalNodes { get; }

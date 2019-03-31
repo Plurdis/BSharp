@@ -17,5 +17,15 @@ namespace BSharp.Components
         public DynamicType ReturnType { get; set; }
 
         public bool IsStatic { get; set; }
+
+        public MethodBlock()
+        {
+
+        }
+
+        public MethodBlock(string name)
+        {
+            Name = name;
+        }
     }
 }

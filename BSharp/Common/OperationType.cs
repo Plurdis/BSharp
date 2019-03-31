@@ -60,5 +60,30 @@ namespace BSharp.Common
         /// ^
         /// </summary>
         XOr,
+
+        /// <summary>
+        /// +
+        /// </summary>
+        Plus,
+
+        /// <summary>
+        /// -
+        /// </summary>
+        Minus,
+
+        /// <summary>
+        /// *
+        /// </summary>
+        Multiply,
+
+        /// <summary>
+        /// /
+        /// </summary>
+        Divide,
+
+        /// <summary>
+        /// %
+        /// </summary>
+        Mod,
     }
 }

@@ -28,8 +28,6 @@ namespace BSharp.Test
             IfBlock if1 = new IfBlock();
             ElseBlock else1 = new ElseBlock();
 
-
-
             if1.Condition = new OperationBlock(
                 new GetterBlock(method1.Parameters[0], new PropertyBlock("Length", null)),
                 OperationType.Equal,

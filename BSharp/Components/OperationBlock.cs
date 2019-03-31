@@ -15,7 +15,6 @@ namespace BSharp.Components
 
         public OperationBlock()
         {
-
         }
 
         public OperationBlock(IBlock left, OperationType operation, IBlock right)

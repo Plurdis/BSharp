@@ -9,12 +9,18 @@ namespace BSharp
     {
         public string Id { get; }
 
+        public IBlock Parent { get; set; }
+
+        public bool HasParent => Parent != null;
+
         public virtual IEnumerable<IBlock> Nodes => InternalNodes;
 
         public virtual int Count => InternalNodes.Count;
 
         internal List<IBlock> InternalNodes { get; }
-        
+
+        public abstract IBlockInfo BlockInfo { get; }
+
         public BlockGroupBase()
         {
             InternalNodes = new List<IBlock>();

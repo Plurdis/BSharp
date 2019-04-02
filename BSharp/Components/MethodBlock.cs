@@ -20,7 +20,6 @@ namespace BSharp.Components
 
         public MethodBlock()
         {
-
         }
 
         public MethodBlock(string name)

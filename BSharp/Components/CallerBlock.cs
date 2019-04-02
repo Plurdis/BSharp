@@ -9,5 +9,11 @@ namespace BSharp.Components
         public IBlock Target { get; set; }
 
         public MethodBlock Method { get; set; }
+
+        public CallerBlock(IBlock target, MethodBlock method)
+        {
+            Target = target;
+            Method = method;
+        }
     }
 }

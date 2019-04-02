@@ -7,5 +7,11 @@ namespace BSharp
     public interface IBlock
     {
         string Id { get; }
+
+        IBlockInfo BlockInfo { get; }
+
+        IBlock Parent { get; }
+         
+        bool HasParent { get; }
     }
 }

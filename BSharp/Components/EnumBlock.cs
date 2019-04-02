@@ -10,7 +10,6 @@ namespace BSharp.Components
 
         public EnumBlock()
         {
-
         }
 
         public EnumBlock(string name)
@@ -18,11 +17,11 @@ namespace BSharp.Components
             Name = name;
         }
 
-        public void AddField(FieldBlock block) => Add(block);
+        public void AddField(EnumValueBlock block) => Add(block);
 
         public override void Add(IBlock block)
         {
-            if (block is FieldBlock)
+            if (block is EnumValueBlock)
             {
                 InternalNodes.Add(block);
             }

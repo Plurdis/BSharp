@@ -14,7 +14,6 @@ namespace BSharp
 
         public ValueBlock()
         {
-
         }
 
         public ValueBlock(object value)
